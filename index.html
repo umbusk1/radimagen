@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radimagen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #C4E2F1;
+        }
+
+        .imagen-fondo {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #C4E2F1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            overflow: hidden;
+        }
+
+        .imagen-fondo img {
+            width: 100%;
+            height: auto;
+            max-width: 1901px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="imagen-fondo">
+        <img src="Radimagen_Home.png" alt="Demo responsive">
+    </div>
+
+    <!-- ========================================= -->
+    <!-- CHATBOX SIN AUTENTICACI�N -->
+    <!-- ========================================= -->
+    <!-- Solo necesitas este script, reemplaza TU_CHATBASE_ID por el ID de tu bot -->
+
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="rGFPfFdQqRszfdvP9HIMv";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+</body>
+</html>
